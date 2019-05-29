@@ -10,7 +10,10 @@ public class ANQ_CodageMorseWords : MonoBehaviour
     private MorseData CodageData;
 
 
-    public void Update() // will display the found words with their morse translation
+
+   
+
+public void Update() // will display the found words with their morse translation
     {
         Text textResult = GetComponent<Text>();
 

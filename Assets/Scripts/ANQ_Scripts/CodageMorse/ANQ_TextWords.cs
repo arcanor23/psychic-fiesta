@@ -80,6 +80,7 @@ public class ANQ_TextWords : MonoBehaviour
     void Start()
     {
 
+         MorseData CodageData = (MorseData)ScriptableObject.CreateInstance("MorseData"); 
 
         CodageData.animalWord = CodageData.animals[Random.Range(0, CodageData.animals.Length)];          // select randomly an animal, number and direction 
         CodageData.numberWord = CodageData.numbers[Random.Range(0, CodageData.numbers.Length)];

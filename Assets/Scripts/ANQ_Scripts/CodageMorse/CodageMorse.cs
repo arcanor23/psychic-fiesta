@@ -11,11 +11,14 @@ public class CodageMorse : MonoBehaviour
     public static bool isBlocked = false; // if the word is too long, the player will be prevented from writing
     public MorseData CodageData;
 
-    
+
 
     ////// Buttons for Morse writings
 
-
+    private void start()
+    {
+        CodageData = (MorseData)ScriptableObject.CreateInstance("MorseData");
+    }
 
     public void ClickDot()
     {
